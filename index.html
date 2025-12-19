@@ -1,0 +1,220 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edwin Martin, senior frontend engineer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+          content="Edwin Martin is a senior frontend webdeveloper.">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#dee1d1"/>
+    <meta property="og:image" content="https://bitstorm.nl/img/meta.jpg">
+    <meta property="og:image:width" content="476">
+    <meta property="og:image:height" content="249">
+    <script defer data-domain="bitstorm.nl" src="https://data.bitstorm.org/js/script.js"></script>
+    <style>
+        @font-face {
+            font-family: 'Nexa';
+            src: url('fonts/nexa/subset/regular.woff2') format('woff2');
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Nexa';
+            src: url('fonts/nexa/subset/bold.woff2') format('woff2');
+            font-weight: bold;
+            font-display: swap;
+        }
+
+        html {
+            box-sizing: border-box;
+            color: #170017;
+            font-family: Nexa, Trebuchet MS, Arial, Helvetica, sans-serif;
+            overflow: hidden;
+            background: lightgrey url(img/bg/misty_colorful_city_skyline.webp) center/cover;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        body {
+            height: 100%;
+            height: 100dvh;
+            margin: 0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            html {
+                filter: brightness(0.7);
+            }
+            section, footer {
+                filter: invert(100%) hue-rotate(180deg);
+            }
+        }
+
+        p {
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
+
+        a {
+            color: #101;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        a:visited {
+            color: #101;
+        }
+
+        a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: orange;
+        }
+
+        ::selection {
+            background-color: #F6AD56;
+            color: black;
+        }
+
+        h1, h2, h3 {
+            text-rendering: optimizeLegibility;
+        }
+
+        h1 {
+            font-size: 200%;
+            margin: 0 0 4px;
+            letter-spacing: -0.4px;
+        }
+
+        h2 {
+            margin: 0 0 24px;
+            letter-spacing: -0.3px;
+        }
+
+        .reset, .reset > li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        main {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height: calc(100vh - 8rem);
+            margin: 0 clamp(20px, 40vw - 100px, 40px);
+        }
+
+        section {
+            max-width: 40rem;
+            padding: clamp(20px, 40vw - 120px, 85px);
+            padding-top: clamp(30px, 40vw - 130px, 90px);
+            padding-bottom: clamp(20px, 40vw - 130px, 80px);
+            background-color: #f2f2f2cd;
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
+            overflow-y: auto;
+            max-height: 100vh;
+            margin-bottom: 2rem;
+            margin-top: clamp(10px, 40vw - 160px, 5rem);
+            corner-shape: squircle;
+        }
+
+        section p:last-child {
+            margin-bottom: 4px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            min-height: 2.2rem;
+            background: rgba(255, 255, 255, 1);
+            border-top: 1px solid hsla(0, 100%, 70%, 0.28);
+            transition: all 0.25s ease;
+        }
+
+        footer:hover, footer:focus-within {
+            min-height: 2.7rem;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .links li {
+            display: inline-block;
+            list-style: none;
+            padding: 0.5em 1em;
+            outline-offset: -2px;
+        }
+
+        .links li a {
+            display: inline-block;
+            outline-color: #8B6BC4;
+        }
+
+        @media (max-width: 40rem) {
+            .links li {
+                min-width: 40%;
+            }
+        }
+
+
+        @media (max-width: 320px) {
+            html {
+                overflow: auto;
+            }
+
+            footer {
+                position: static;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<main>
+    <section>
+        <header>
+            <h1>Edwin Martin</h1>
+            <h2>Frontend engineer</h2>
+        </header>
+
+        <p>I love to make a better web, with higher <strong>performance</strong>, nicer <strong>user interaction</strong>
+            and <strong>accessible</strong> to everyone using <strong>modern technologies</strong>.</p>
+
+        <p>Usually, I work in <strong>agile devops</strong> teams using <strong>CI/CD</strong>, together with designers,
+            backend engineers and testers to build and improve <strong>complex</strong>, <strong>high volume</strong>
+            websites.</p>
+
+        <p>Previouw work include: <strong>Schiphol</strong>, <strong>Talpa
+            radio</strong>, <strong>United</strong>, the <strong>Municipality
+            of Amsterdam</strong> and <strong>ING</strong>. I'm now working at <strong>Speer IT</strong></p>
+    </section>
+</main>
+
+<footer>
+    <ul class="links reset">
+        <li><a href="mailto:edwin@bitstorm.nl">edwin@bitstorm.nl</a></li>
+        <li><a href="tel:+31620392051">+31 (0)6 2039 2051</a></li>
+        <li><a href="https://www.linkedin.com/in/edwinm">LinkedIn/edwinm</a></li>
+        <li>KvK 34135161</li>
+    </ul>
+</footer>
+
+</body>
+</html>
